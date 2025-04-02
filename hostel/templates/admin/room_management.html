@@ -1,0 +1,32 @@
+{% extends 'student/base.html' %}
+{% block content %}
+<h1>Room Management</h1>
+<a href="{% url 'add_room' %}" class="btn btn-primary mb-3">Add New Room</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Room Number</th>
+            <th>Room Type</th>
+            <th>Capacity</th>
+            <th>Beds Available</th>
+            <th>Availability</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for room in rooms %}
+        <tr>
+            <td>{{ room.room_number }}</td>
+            <td>{{ room.room_type }}</td>
+            <td>{{ room.capacity }}</td>
+            <td>{{ room.beds_available }}</td>
+            <td>{% if room.is_available %}Available{% else %}Occupied{% endif %}</td>
+            <td>
+                <a href="{% url 'edit_room' room.id %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'delete_room' room.id %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

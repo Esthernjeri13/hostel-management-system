@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d84649fe-103e-4f27-88d1-184f2fd55945" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/hostelmanagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/management/commands/send_rent_reminders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/admin/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/admin/feedback_management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/admin/rent_management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/admin/room_management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/admin/student_management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/auth/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/student/book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/student/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/templates/student/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostelmanagement/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostelmanagement/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostelmanagement/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostelmanagement/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostelmanagement/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/LineIcons.2.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/bootstrap.4.5.2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/LineIcons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/LineIcons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/LineIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/LineIcons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fonts/LineIcons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/4sharing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/6sharing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/8sharing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/about_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/blog1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/blog2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/hero-area.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/hostel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/hostel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/hostel1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/hostel2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/jumbotron.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/logo-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/single (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/studio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/team.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/twinroom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/bootstrap.4.5.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/scrolling-nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vendor/modernizr-3.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/wow.min.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tuSC2kwWsCWQicd0uQogNTOdQl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.hostelmanagement.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/PycharmProjects/hostelmanagement/static/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\hostelmanagement\static\assets\images" />
+      <recent name="C:\Users\hp\PycharmProjects\hostelmanagement" />
+      <recent name="C:\Users\hp\PycharmProjects\hostelmanagement\hostel\templates\student" />
+      <recent name="C:\Users\hp\PycharmProjects\hostelmanagement\hostel" />
+      <recent name="C:\Users\hp\PycharmProjects\hostelmanagement\static\style" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="hostelmanagement" type="Python.DjangoServer" factoryName="Django server">
+      <module name="hostelmanagement" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="hostelmanagement.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d84649fe-103e-4f27-88d1-184f2fd55945" name="Changes" comment="" />
+      <created>1741200335653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741200335653</updated>
+      <workItem from="1741200403657" duration="21734000" />
+      <workItem from="1741502471967" duration="4880000" />
+      <workItem from="1741588924563" duration="26000" />
+      <workItem from="1741597435649" duration="1209000" />
+      <workItem from="1742058684975" duration="63617000" />
+      <workItem from="1742277198025" duration="52763000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

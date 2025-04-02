@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>Student Hostel</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../../../static/assets/images/hostel.png" type="image/png">
+
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/animate.css">
+
+    <!--====== Nice Select CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/nice-select.css">
+
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/LineIcons.2.0.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/bootstrap.4.5.2.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #EEC41E, #ff9f1c);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-container h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 35px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: #ff8c00;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(255, 140, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #e67600;
+            transform: scale(1.05);
+        }
+
+        .form-control {
+            border-radius: 25px;
+            border: 2px solid #ffaf40;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .form-control:focus {
+            border-color: #ff8c00;
+            box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.5);
+        }
+
+        .form-check-label {
+            font-weight: 500;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .register-link a {
+            color: #ff8c00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .bubble {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            top: -20px;
+            right: -20px;
+            animation: float 3s infinite alternate ease-in-out;
+        }
+
+        .bubble:nth-child(2) {
+            width: 30px;
+            height: 30px;
+            top: auto;
+            bottom: -10px;
+            left: -15px;
+            animation-duration: 4s;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(15px); }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="login-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <span class="emoji">🏡✨</span>
+        <h1>Welcome Back!</h1>
+        <p>Login to your student hostel account</p>
+
+       <form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            {% for field, errors in form.errors.items %}
+                {% for error in errors %}
+                    {{ error }}<br>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    {% endif %}
+    <div class="form-group">
+        {{ form.username.label_tag }}
+        {{ form.username }}
+    </div>
+    <div class="form-group">
+        {{ form.password.label_tag }}
+        {{ form.password }}
+    </div>
+    <div class="form-group text-left">
+        <label class="font-weight-bold">Login as:</label>
+        <div class="form-check">
+            {{ form.user_type }}
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Login 🚀</button>
+</form>
+        <p class="register-link">Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+    </div>
+</body>
+
+</html>

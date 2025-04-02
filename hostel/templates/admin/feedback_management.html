@@ -1,0 +1,26 @@
+{% extends 'student/base.html' %}
+{% block content %}
+<h1>Feedback Management</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Message</th>
+            <th>Timestamp</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for feedback in feedbacks %}
+        <tr>
+            <td>{{ feedback.student.name }}</td>
+            <td>{{ feedback.message }}</td>
+            <td>{{ feedback.timestamp }}</td>
+            <td>
+                <a href="{% url 'delete_feedback' feedback.id %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

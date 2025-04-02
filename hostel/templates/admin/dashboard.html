@@ -1,0 +1,10 @@
+{% extends 'student/base.html' %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+<div class="list-group">
+    <a href="{% url 'room_management' %}" class="list-group-item list-group-item-action">Room Management</a>
+    <a href="{% url 'student_management' %}" class="list-group-item list-group-item-action">Student Management</a>
+    <a href="{% url 'rent_management' %}" class="list-group-item list-group-item-action">Rent Management</a>
+    <a href="{% url 'feedback_management' %}" class="list-group-item list-group-item-action">Feedback Management</a>
+</div>
+{% endblock %}

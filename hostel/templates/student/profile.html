@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>Student Hostel</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../../../static/assets/images/hostel.png" type="image/png">
+
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/animate.css">
+
+    <!--====== Nice Select CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/nice-select.css">
+
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/LineIcons.2.0.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/bootstrap.4.5.2.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="../../../static/assets/css/style.css">
+    <!-- Bootstrap Bundle with Popper.js (required for modals) -->
+    <style>
+        .card-header{
+            background-color: #EEC41E;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container mt-4">
+    <h2>Hello, {{ request.user.username }}! 👋</h2>
+
+    <div class="row">
+        <!-- Messages Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-white">
+                    Messages 📩
+                </div>
+                <div class="card-body">
+                    {% if messages %}
+                        <ul class="list-group">
+                            {% for message in messages %}
+                                <li class="list-group-item">
+                                    <small class="text-muted">{{ message.timestamp|date:"M d, Y H:i" }}</small>
+                                    <p>{{ message.content }}</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No messages yet.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking History Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-white">
+                    Booking History 🏠
+                </div>
+                <div class="card-body">
+                    {% if bookings %}
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Room Type</th>
+                                    <th>Check-in</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for booking in bookings %}
+                                    <tr>
+                                        <td>{{ booking.get_room_type_display }}</td>
+                                        <td>{{ booking.check_in_date }}</td>
+                                        <td>{{ booking.get_duration_of_stay_display }}</td>
+                                        <td>
+                                            <span class="badge {% if booking.status == 'pending' %}badge-warning{% else %}badge-success{% endif %}">
+                                                {{ booking.get_status_display }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p>No booking history yet.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
